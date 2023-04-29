@@ -2,9 +2,9 @@
 
 namespace AniketIN\AntiCaptcha;
 
+use AniketIN\AntiCaptcha\Commands\AntiCaptchaCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AniketIN\AntiCaptcha\Commands\AntiCaptchaCommand;
 
 class AntiCaptchaServiceProvider extends PackageServiceProvider
 {
@@ -17,10 +17,9 @@ class AntiCaptchaServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-anticaptcha')
-            ->hasConfigFile('anticaptcha')
-            // ->hasViews()
-            // ->hasMigration('create_laravel-anticaptcha_table')
-            // ->hasCommand(AntiCaptchaCommand::class)
-            ;
+            ->hasConfigFile('anticaptcha');
+        // ->hasViews()
+        // ->hasMigration('create_laravel-anticaptcha_table')
+        // ->hasCommand(AntiCaptchaCommand::class)
     }
 }

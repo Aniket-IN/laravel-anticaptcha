@@ -2,7 +2,6 @@
 
 namespace AniketIN\AntiCaptcha\Utility;
 
-
 interface AntiCaptchaTaskProtocol
 {
     public function getPostData();
@@ -349,4 +348,3 @@ class Anticaptcha
         $this->softId = (int) $value;
     }
 }
-

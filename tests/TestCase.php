@@ -2,9 +2,9 @@
 
 namespace AniketIN\AntiCaptcha\Tests;
 
+use AniketIN\AntiCaptcha\AntiCaptchaServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AniketIN\AntiCaptcha\AntiCaptchaServiceProvider;
 
 class TestCase extends Orchestra
 {
