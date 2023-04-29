@@ -17,9 +17,10 @@ class AntiCaptchaServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-anticaptcha')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-anticaptcha_table')
-            ->hasCommand(AntiCaptchaCommand::class);
+            ->hasConfigFile('anticaptcha.php')
+            // ->hasViews()
+            // ->hasMigration('create_laravel-anticaptcha_table')
+            // ->hasCommand(AntiCaptchaCommand::class)
+            ;
     }
 }
