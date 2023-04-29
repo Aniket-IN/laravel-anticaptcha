@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "aniket-in/laravel-anticaptcha",
+    "description": "This is my package laravel-anticaptcha",
     "keywords": [
-        ":vendor_name",
+        "Aniket-IN",
         "laravel",
-        ":package_slug"
+        "laravel-anticaptcha"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/aniket-in/laravel-anticaptcha",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Aniket-IN",
+            "email": "aniket.das.in@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "AniketIN\\AntiCaptcha\\": "src/",
+            "AniketIN\\AntiCaptcha\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "AniketIN\\AntiCaptcha\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "AniketIN\\AntiCaptcha\\AntiCaptchaServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "AntiCaptcha": "AniketIN\\AntiCaptcha\\Facades\\AntiCaptcha"
             }
         }
     },

@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace AniketIN\AntiCaptcha\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class AntiCaptchaCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-anticaptcha';
 
     public $description = 'My command';
 
