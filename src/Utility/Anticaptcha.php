@@ -2,7 +2,6 @@
 
 namespace AniketIN\AntiCaptcha\Utility;
 
-
 interface AntiCaptchaTaskProtocol
 {
     public function getPostData();
@@ -248,6 +247,7 @@ class Anticaptcha
         ]);
         curl_setopt($ch, CURLOPT_TIMEOUT, 30);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
+        curl_setopt($ch, CURLOPT_TIMEOUT_MS, 1000 * 60 * 5);
         if (! $this->verifySSL) {
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
@@ -349,4 +349,3 @@ class Anticaptcha
         $this->softId = (int) $value;
     }
 }
-
